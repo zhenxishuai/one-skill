@@ -3,5 +3,19 @@
   "knowledge_paths": [],
   "output_dir": "outputs/one-test",
   "preferred_writing_model": "Gemini 3.8 Flash",
-  "connections": {"knowledge": null, "board": null, "publisher": null}
+  "connections": {
+    "knowledge": null,
+    "board": null,
+    "publisher": null
+  },
+  "production_skills": {
+    "writing": null,
+    "adaptation": null,
+    "xhs_cover": null,
+    "xhs_cards": null,
+    "wechat_cover": null,
+    "wechat_illustration": null,
+    "wechat_layout": null,
+    "delivery": null
+  }
 }

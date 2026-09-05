@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-MODULES = ("skill", "radar", "mother", "adapt", "design", "image", "distribute", "feedback")
+MODULES = ("skill", "judge", "produce", "radar", "mother", "adapt", "design", "image", "distribute", "feedback")
 LINK = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
 PRIVATE = re.compile(r"/" + r"Users/[^\s/]+/|(?:gh[pousr]_|github_pat_)[A-Za-z0-9_]{15,}|https://[^\s/]+\.feishu\.cn/base/[^\s)]+")
 
@@ -21,7 +21,8 @@ def check(root):
         if not match or f"name: one-{module}\n" not in match[1] + "\n" or not re.search(r"^description: .+", match[1], re.M):
             errors.append(f"invalid frontmatter: {path.relative_to(root)}")
     for path in sorted(root.rglob("*")):
-        if ".git" in path.parts or path.is_dir():
+        relative = path.relative_to(root)
+        if relative.parts[0] in {".git", "private", "outputs", "__pycache__"} or relative == Path("config.local.json") or path.is_dir():
             continue
         if path.is_symlink():
             errors.append(f"symlink: {path.relative_to(root)}")
@@ -47,7 +48,9 @@ def check(root):
         data = json.loads(config.read_text())
         assert data["author_samples"] == [] and data["knowledge_paths"] == []
         assert all(value is None for value in data["connections"].values())
-    except (OSError, ValueError, KeyError, AssertionError, AttributeError):
+        assert set(data["production_skills"]) == {"writing", "adaptation", "xhs_cover", "xhs_cards", "wechat_cover", "wechat_illustration", "wechat_layout", "delivery"}
+        assert all(value is None for value in data["production_skills"].values())
+    except (OSError, ValueError, KeyError, AssertionError, AttributeError, TypeError):
         errors.append("invalid or nonempty private config example")
     return {"modules": len(MODULES), "local_links": links, "errors": errors, "pass": not errors}
 
@@ -57,7 +60,11 @@ def self_check():
     with TemporaryDirectory() as directory:
         root = Path(directory)
         (root / "README.md").write_text("[missing](no-file.md)\n")
+        (root / "config.local.json").write_text(json.dumps({"sample": "/" + "Users/example/private.md"}))
+        (root / "outputs").mkdir()
+        (root / "outputs" / "draft.md").write_text("[private draft](not-in-public-package.md)")
         result = check(root)
+        assert not any("config.local.json" in error or "outputs/" in error for error in result["errors"])
         assert not result["pass"]
         assert any("broken or external local link" in error for error in result["errors"])
         assert any("missing:" in error for error in result["errors"])

@@ -5,7 +5,7 @@ description: One 跨渠道改编。用户提供原文、母稿或口述，要求
 
 # One Adapt
 
-先读 [运营合同](../one-skill/references/operating-contract.md)，采用同一任务的材料、已确认项和停止位置。模块结束后返回 One 继续完成其余已授权工作。
+先读 [运营合同](../one-skill/references/operating-contract.md)，采用同一任务的材料、已确认项和停止位置。模块结束后返回调用它的内容判断/内容制作入口；独立调用直接交付，不反向加载总入口。
 
 先读 [作者标准](../one-skill/references/authoring.md) 与 [渠道写法](../one-skill/references/channels.md)。
 

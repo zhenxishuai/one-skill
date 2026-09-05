@@ -5,7 +5,7 @@ description: One 自媒体设计规范、制作与验收。用于封面、信息
 
 # One Design
 
-先读 [运营合同](../one-skill/references/operating-contract.md)，采用同一任务的材料、已确认项和停止位置。模块结束后返回 One 继续完成其余已授权工作。
+先读 [运营合同](../one-skill/references/operating-contract.md)，采用同一任务的材料、已确认项和停止位置。模块结束后返回调用它的内容判断/内容制作入口；独立调用直接交付，不反向加载总入口。
 
 本模块同时提供包内设计标准，制作前必须读取。若宿主或项目要求额外设计 Skill，遵守其要求；没有工具不能以文字方案冒充视觉成品。
 

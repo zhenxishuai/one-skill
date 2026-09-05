@@ -1,0 +1,6 @@
+interface:
+  display_name: "One · 内容制作"
+  short_description: "独立成稿、改编、生图排版与授权投递，按需加载"
+  default_prompt: "请使用 $one-produce 完成本次指定范围，沿用已有材料、中文表达与明确批准边界。"
+policy:
+  allow_implicit_invocation: true

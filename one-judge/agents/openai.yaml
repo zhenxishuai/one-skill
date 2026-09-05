@@ -1,0 +1,6 @@
+interface:
+  display_name: "One · 内容判断"
+  short_description: "审题、内容价值与论证，必要时追问，不强制成稿"
+  default_prompt: "请使用 $one-judge 完成本次指定范围，沿用已有材料、中文表达与明确批准边界。"
+policy:
+  allow_implicit_invocation: true
