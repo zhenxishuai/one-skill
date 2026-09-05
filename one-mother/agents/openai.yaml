@@ -1,6 +1,6 @@
 interface:
-  display_name: "one-mother"
-  short_description: "复杂材料提炼与共享母稿，默认连续完成待审版"
-  default_prompt: "Use $one-mother to complete the requested mother draft or stop at the explicitly requested discussion stage."
+  display_name: "One · 共同论证底稿"
+  short_description: "整理主张、来源、反证与推理顺序；正文交制作"
+  default_prompt: "请使用 $one-mother 整理论证底稿；作为子模块只返回调用者，独立请求完整稿时交内容制作继续。"
 policy:
   allow_implicit_invocation: false

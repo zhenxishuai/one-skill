@@ -20,6 +20,8 @@
 
 两套沿用万叔的作者标准：真实材料、具体动作、有来处的判断，保留原话里的力度和毛边。学到的方法消化成自己的工作方式，用实际成品检验。
 
+内部方法也按职责拆开：判断侧把抽象词还原成具体情境，核对前提和证据，给出能成立的说法；制作侧把采用的材料放进具体段落，保持同篇声音一致，再做文字、讲述和成品检查。共同论证底稿不再自动写文章。
+
 ## 制作侧可以接哪些能力
 
 | 能力 | 包内已有的做法 | 真实执行条件 |
@@ -98,7 +100,7 @@
 ## 包内结构
 
 - 三个入口：One、内容判断、内容制作。
-- 判断侧按需使用：[审题选题](one-radar/SKILL.md)、[共同母稿](one-mother/SKILL.md)、[反馈复盘](one-feedback/SKILL.md)。
+- 判断侧按需使用：[审题选题](one-radar/SKILL.md)、[共同论证底稿](one-mother/SKILL.md)、[反馈复盘](one-feedback/SKILL.md)。
 - 制作侧按需使用：[渠道改编](one-adapt/SKILL.md)、[设计排版](one-design/SKILL.md)、[场景配图](one-image/SKILL.md)、[投递发布](one-distribute/SKILL.md)。
 - 共享：[作者标准](one-skill/references/authoring.md)、[渠道写法](one-skill/references/channels.md)、[共同约定](one-skill/references/operating-contract.md)、[轻量交接](one-skill/references/handoff.md)、[验收标准](one-skill/references/validation-rubric.md)。
 
