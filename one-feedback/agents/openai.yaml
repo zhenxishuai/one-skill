@@ -1,0 +1,6 @@
+interface:
+  display_name: "one-feedback"
+  short_description: "按内容目标和真实数据定位问题，提出一个改进实验"
+  default_prompt: "Use $one-feedback to evaluate verified evidence against the actual content objective."
+policy:
+  allow_implicit_invocation: false

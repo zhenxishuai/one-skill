@@ -1,0 +1,5 @@
+config.local.json
+private/
+outputs/
+__pycache__/
+.DS_Store

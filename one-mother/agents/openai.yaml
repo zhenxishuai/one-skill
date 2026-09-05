@@ -1,0 +1,6 @@
+interface:
+  display_name: "one-mother"
+  short_description: "复杂材料提炼与共享母稿，默认连续完成待审版"
+  default_prompt: "Use $one-mother to complete the requested mother draft or stop at the explicitly requested discussion stage."
+policy:
+  allow_implicit_invocation: false

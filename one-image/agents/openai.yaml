@@ -1,0 +1,6 @@
+interface:
+  display_name: "one-image"
+  short_description: "依据账号与设计标准制作场景图，并实际打开验收"
+  default_prompt: "Use $one-image to create a scene image from established design standards and verify it."
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,6 @@
+interface:
+  display_name: "One Design"
+  short_description: "按包内设计标准制作自媒体视觉，并完成真实渲染和肉眼验收"
+  default_prompt: "Use $one-design to apply the package design standards and verify the rendered artifact."
+policy:
+  allow_implicit_invocation: false

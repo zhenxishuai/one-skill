@@ -1,0 +1,7 @@
+{
+  "author_samples": [],
+  "knowledge_paths": [],
+  "output_dir": "outputs/one-test",
+  "preferred_writing_model": "Gemini 3.8 Flash",
+  "connections": {"knowledge": null, "board": null, "publisher": null}
+}

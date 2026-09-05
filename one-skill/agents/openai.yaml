@@ -1,0 +1,6 @@
+interface:
+  display_name: "One Skill · 万叔自媒体"
+  short_description: "万叔自己的自媒体工作体系，连续完成公众号、口播和小红书待审成品"
+  default_prompt: "Use $one-skill to complete this media task to the requested deliverable, preserving my voice and explicit approval boundaries."
+policy:
+  allow_implicit_invocation: true

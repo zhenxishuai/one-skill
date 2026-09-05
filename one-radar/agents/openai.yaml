@@ -1,0 +1,6 @@
+interface:
+  display_name: "one-radar"
+  short_description: "按实际账号和受众筛选有证据的自媒体选题"
+  default_prompt: "Use $one-radar to find evidenced topics for the current audience and content objective."
+policy:
+  allow_implicit_invocation: false

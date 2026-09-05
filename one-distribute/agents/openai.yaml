@@ -1,0 +1,6 @@
+interface:
+  display_name: "One Distribute"
+  short_description: "按具体授权投递草稿或公开版本，并回读真实回执"
+  default_prompt: "Use $one-distribute to deliver the requested draft or explicitly authorized public version and return a verified receipt."
+policy:
+  allow_implicit_invocation: false

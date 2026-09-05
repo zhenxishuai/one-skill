@@ -1,0 +1,6 @@
+interface:
+  display_name: "one-adapt"
+  short_description: "按指定渠道从原文独立派生待审版本，不固定平台数量"
+  default_prompt: "Use $one-adapt to produce the requested native channel versions from traceable source material."
+policy:
+  allow_implicit_invocation: false
